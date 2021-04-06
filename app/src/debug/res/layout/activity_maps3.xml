@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".MapsActivity3"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/border"
+        android:id="@+id/relLayout1">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/ic_magnify"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/icon_magnify"
+            android:contentDescription="@string/todo" />
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/ic_magnify"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/input_search"
+            android:background="@null"
+            android:hint="@string/enter_city"
+            android:imeOptions="actionSearch"
+            android:autofillHints="" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_submit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:text="submit" />
+
+</RelativeLayout>
