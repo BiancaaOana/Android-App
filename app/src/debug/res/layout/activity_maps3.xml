@@ -29,14 +29,14 @@
             android:src="@drawable/icon_magnify"
             android:contentDescription="@string/todo" />
 
-        <AutoCompleteTextView
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/ic_magnify"
             android:layout_centerVertical="true"
             android:textSize="15sp"
             android:textColor="#000"
-            android:id="@+id/input_search"
+            android:id="@+id/input_search3"
             android:background="@null"
             android:hint="@string/enter_city"
             android:imeOptions="actionSearch"
