@@ -40,11 +40,9 @@ public class SwipeLeftActivityPlaces extends AppCompatActivity {
                 if(x1 < x2) {
                     Intent i = new Intent(SwipeLeftActivityPlaces.this, SwipeLeftActivityRestaurants.class);
                     startActivity(i);
-                }else if(x1 > x2){
-                    Intent i = new Intent(SwipeLeftActivityPlaces.this, ExploreCamera.class);
-                    startActivity(i);
-                    break;
                 }
+                    break;
+
 
         }
         return false;
